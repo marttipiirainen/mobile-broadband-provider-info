@@ -1,0 +1,116 @@
+From 2a9f1f94829354665704d8c42174729ce3a2113d Mon Sep 17 00:00:00 2001
+From: Martti Piirainen <martti.piirainen@oss.tieto.com>
+Date: Thu, 24 Oct 2013 13:23:29 +0300
+Subject: [PATCH] Change order of British operators
+
+---
+ serviceproviders.xml |   86 +++++++++++++++++++++++++-------------------------
+ 1 file changed, 43 insertions(+), 43 deletions(-)
+
+diff --git a/serviceproviders.xml b/serviceproviders.xml
+index a8397d4..461f1c4 100644
+--- a/serviceproviders.xml
++++ b/serviceproviders.xml
+@@ -3868,49 +3868,6 @@ conceived.
+ <!-- Britain -->
+ <country code="gb">
+ 	<provider>
+-		<name>Asda Mobile</name>
+-		<gsm>
+-			<network-id mcc="234" mnc="15"/>
+-			<apn value="asdamobiles.co.uk">
+-				<plan type="prepaid"/>
+-				<usage type="internet"/>
+-				<username>web</username>
+-				<password>web</password>
+-			</apn>
+-		</gsm>
+-	</provider>
+-	<provider>
+-		<name>BT Mobile</name>
+-		<gsm>
+-			<network-id mcc="234" mnc="00"/>
+-			<apn value="btmobile.bt.com">
+-				<plan type="postpaid"/>
+-				<usage type="internet"/>
+-				<username>bt</username>
+-				<password>bt</password>
+-			</apn>
+-		</gsm>
+-	</provider>
+-	<provider>
+-		<name>giffgaff</name>
+-		<gsm>
+-			<network-id mcc="234" mnc="02"/>
+-			<network-id mcc="234" mnc="10"/>
+-			<network-id mcc="234" mnc="11"/>
+-			<voicemail>443</voicemail>
+-			<balance-check>
+-				<ussd>*100#</ussd>
+-			</balance-check>
+-			<apn value="giffgaff.com">
+-				<plan type="prepaid"/>
+-				<usage type="internet"/>
+-				<name>Mobile Broadband</name>
+-				<username>giffgaff</username>
+-				<password>password</password>
+-			</apn>
+-		</gsm>
+-	</provider>
+-	<provider>
+ 		<name>O2</name>
+ 		<gsm>
+ 			<network-id mcc="234" mnc="02"/>
+@@ -3972,6 +3929,49 @@ conceived.
+ 		</gsm>
+ 	</provider>
+ 	<provider>
++		<name>Asda Mobile</name>
++		<gsm>
++			<network-id mcc="234" mnc="15"/>
++			<apn value="asdamobiles.co.uk">
++				<plan type="prepaid"/>
++				<usage type="internet"/>
++				<username>web</username>
++				<password>web</password>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>BT Mobile</name>
++		<gsm>
++			<network-id mcc="234" mnc="00"/>
++			<apn value="btmobile.bt.com">
++				<plan type="postpaid"/>
++				<usage type="internet"/>
++				<username>bt</username>
++				<password>bt</password>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
++		<name>giffgaff</name>
++		<gsm>
++			<network-id mcc="234" mnc="02"/>
++			<network-id mcc="234" mnc="10"/>
++			<network-id mcc="234" mnc="11"/>
++			<voicemail>443</voicemail>
++			<balance-check>
++				<ussd>*100#</ussd>
++			</balance-check>
++			<apn value="giffgaff.com">
++				<plan type="prepaid"/>
++				<usage type="internet"/>
++				<name>Mobile Broadband</name>
++				<username>giffgaff</username>
++				<password>password</password>
++			</apn>
++		</gsm>
++	</provider>
++	<provider>
+ 		<!-- http://sales.talktalk.co.uk/products/mobile/faq/started.html#A12 -->
+ 		<name>TalkTalk</name>
+ 		<gsm>
+-- 
+1.7.9.5
+
